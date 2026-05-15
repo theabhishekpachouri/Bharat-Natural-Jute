@@ -1,0 +1,11 @@
+const express = require('express');
+const router = express.Router();
+
+const { addReview, getProductReviews } = require('./review.controller');
+
+const { protect } = require('../../middleware/authMiddleware');
+router.post('/', protect, addReview);
+
+router.get('/:productId', getProductReviews);
+
+module.exports = router;
