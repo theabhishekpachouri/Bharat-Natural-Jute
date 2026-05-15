@@ -1,32 +1,30 @@
-# Logs
-logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
 node_modules
 dist
 dist-ssr
 *.local
-
-# Dependencies
-/node_modules
+node_modules/
 /.pnp
 .pnp.js
-
-# Testing
+jspm_packages/
+package_lock.json
+yarn.lock
+vendor/
+.bundle/
+bin/
+obj/
 /coverage
-
-
-# Environment
 .env
 .env.local
 .env.test.local
-
-# Editor
+.env.development
+.env.production.local
+*.env
 .vscode/
 .idea/
 *.suo
@@ -37,7 +35,7 @@ dist-ssr
 .env
 .env.local
 .env.*.local
-# Temporary Files
+
 tmp/
 *.tmp
 *.log
